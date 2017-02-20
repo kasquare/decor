@@ -1,0 +1,1197 @@
+<?php
+
+/* __string_template__945c2a97376b37b644501bb12c6efb7db5d1be7150f7f6b3aaa84da73355d5dc */
+class __TwigTemplate_5137a66e350e30a0e2bbc04b40f42c927946d25f46c799cb867342877aa9f471 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+            'stylesheets' => array($this, 'block_stylesheets'),
+            'extra_stylesheets' => array($this, 'block_extra_stylesheets'),
+            'content_header' => array($this, 'block_content_header'),
+            'content' => array($this, 'block_content'),
+            'content_footer' => array($this, 'block_content_footer'),
+            'sidebar_right' => array($this, 'block_sidebar_right'),
+            'javascripts' => array($this, 'block_javascripts'),
+            'extra_javascripts' => array($this, 'block_extra_javascripts'),
+            'translate_javascripts' => array($this, 'block_translate_javascripts'),
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        echo "<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\">
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0\">
+<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+<meta name=\"robots\" content=\"NOFOLLOW, NOINDEX\">
+
+<link rel=\"icon\" type=\"image/x-icon\" href=\"/img/favicon.ico\" />
+<link rel=\"apple-touch-icon\" href=\"/img/app_icon.png\" />
+
+<title>Products • kasquare</title>
+
+  <script type=\"text/javascript\">
+    var help_class_name = 'AdminProducts';
+    var iso_user = 'en';
+    var full_language_code = 'en-us';
+    var full_cldr_language_code = 'en-US';
+    var country_iso_code = 'IN';
+    var _PS_VERSION_ = '1.7.0.4';
+    var roundMode = 2;
+    var youEditFieldFor = '';
+        var new_order_msg = 'A new order has been placed on your shop.';
+    var order_number_msg = 'Order number: ';
+    var total_msg = 'Total: ';
+    var from_msg = 'From: ';
+    var see_order_msg = 'View this order';
+    var new_customer_msg = 'A new customer registered on your shop.';
+    var customer_name_msg = 'Customer name: ';
+    var new_msg = 'A new message was posted on your shop.';
+    var see_msg = 'Read this message';
+    var token = '91bafe3243451cfeaf2922e341be6d3a';
+    var token_admin_orders = 'bbdd5f5ba65ab69b969610a356a19b83';
+    var token_admin_customers = '529c985c2908876641406c698d5c4f11';
+    var token_admin_customer_threads = '82b3c00aa0b22485f7fc2f873f2950f0';
+    var currentIndex = 'index.php?controller=AdminProducts';
+    var employee_token = 'ea872b1ec9d2b2e19862558521d52003';
+    var choose_language_translate = 'Choose language';
+    var default_language = '1';
+    var admin_modules_link = '/adminkasquare/index.php/module/catalog/recommended?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w';
+    var tab_modules_list = 'prestagiftvouchers,dmuassocprodcat,etranslation,apiway,prestashoptoquickbooks';
+    var update_success_msg = 'Update successful';
+    var errorLogin = 'PrestaShop was unable to log in to Addons. Please check your credentials and your Internet connection.';
+    var search_product_msg = 'Search for a product';
+  </script>
+
+      <link href=\"/adminkasquare/themes/new-theme/public/theme.css\" rel=\"stylesheet\" type=\"text/css\"/>
+      <link href=\"/js/jquery/plugins/chosen/jquery.chosen.css\" rel=\"stylesheet\" type=\"text/css\"/>
+      <link href=\"/adminkasquare/themes/default/css/vendor/nv.d3.css\" rel=\"stylesheet\" type=\"text/css\"/>
+  
+  <script type=\"text/javascript\">
+var baseAdminDir = \"\\/adminkasquare\\/\";
+var baseDir = \"\\/\";
+var currency = {\"iso_code\":\"INR\",\"sign\":\"\\u20b9\",\"name\":\"Indian Rupee\",\"format\":\"\\u00a4#,##0.00\"};
+var host_mode = false;
+</script>
+<script type=\"text/javascript\" src=\"/adminkasquare/themes/new-theme/public/bundle.js\"></script>
+<script type=\"text/javascript\" src=\"/js/jquery/plugins/jquery.chosen.js\"></script>
+<script type=\"text/javascript\" src=\"/js/admin.js?v=1.7.0.4\"></script>
+<script type=\"text/javascript\" src=\"/js/cldr.js\"></script>
+<script type=\"text/javascript\" src=\"/js/tools.js?v=1.7.0.4\"></script>
+<script type=\"text/javascript\" src=\"/adminkasquare/public/bundle.js\"></script>
+<script type=\"text/javascript\" src=\"/js/vendor/d3.v3.min.js\"></script>
+<script type=\"text/javascript\" src=\"/adminkasquare/themes/default/js/vendor/nv.d3.min.js\"></script>
+
+
+  
+
+";
+        // line 69
+        $this->displayBlock('stylesheets', $context, $blocks);
+        $this->displayBlock('extra_stylesheets', $context, $blocks);
+        echo "</head>
+<body class=\"adminproducts\">
+
+
+
+<header>
+  <nav class=\"main-header\">
+
+    
+    
+
+    
+    <a class=\"logo pull-left\" href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminDashboard&amp;token=1b630b6bc49122f9cb9a10c380a44895\"></a>
+
+    <div class=\"component pull-left\"><div class=\"ps-dropdown dropdown\">
+  <span type=\"button\" id=\"quick-access\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+    <span class=\"selected-item\">Quick Access</span> <i class=\"material-icons arrow-down\">keyboard_arrow_down</i>
+  </span>
+  <div class=\"ps-dropdown-menu dropdown-menu\" aria-labelledby=\"quick-access\">
+          <a class=\"dropdown-item\"
+         href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCategories&amp;addcategory&amp;token=4eddaacb30c19f7b2a73cfbeda29225f\"
+                 data-item=\"New category\"
+      >New category</a>
+          <a class=\"dropdown-item\"
+         href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php/productnew?token=21323be8730fcc58a50ee7dbf118ba9f\"
+                 data-item=\"New product\"
+      >New product</a>
+          <a class=\"dropdown-item\"
+         href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCartRules&amp;addcart_rule&amp;token=eedaae0b6838fc71e95ec1098e0da3c6\"
+                 data-item=\"New voucher\"
+      >New voucher</a>
+          <a class=\"dropdown-item\"
+         href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminOrders&amp;token=bbdd5f5ba65ab69b969610a356a19b83\"
+                 data-item=\"Orders\"
+      >Orders</a>
+        <hr>
+        <a
+      class=\"dropdown-item js-quick-link\"
+      data-rand=\"45\"
+      data-icon=\"icon-AdminCatalog\"
+      data-method=\"add\"
+      data-url=\"index.php/productcatalog\"
+      data-post-link=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminQuickAccesses&token=62c4b89dfb9166bcff4750eef4ecd9f0\"
+      data-prompt-text=\"Please name this shortcut:\"
+      data-link=\"Products - List\"
+    >
+      <i class=\"material-icons\">add_circle_outline</i>
+      Add current page to QuickAccess
+    </a>
+    <a class=\"dropdown-item\" href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminQuickAccesses&token=62c4b89dfb9166bcff4750eef4ecd9f0\">
+      <i class=\"material-icons\">settings</i>
+      Manage quick accesses
+    </a>
+  </div>
+</div>
+</div>
+    <div class=\"component\">
+
+<form id=\"header_search\"
+      class=\"bo_search_form dropdown-form js-dropdown-form\"
+      method=\"post\"
+      action=\"/adminkasquare/index.php?controller=AdminSearch&amp;token=bb8c838628e37f7e7efa9a8a82685f16\"
+      role=\"search\">
+  <input type=\"hidden\" name=\"bo_search_type\" id=\"bo_search_type\" class=\"js-search-type\" />
+    <div class=\"input-group\">
+    <input id=\"bo_query\" name=\"bo_query\" type=\"search\" class=\"form-control dropdown-form-search js-form-search\" value=\"\" placeholder=\"Search (e.g.: product reference, customer name…)\" />
+    <div class=\"input-group-addon\">
+      <div class=\"dropdown\">
+        <span class=\"dropdown-toggle js-dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">
+          Everywhere
+        </span>
+        <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu\">
+          <ul class=\"items-list js-items-list\">
+            <li class=\"search-all search-option active\">
+              <a class=\"dropdown-item\" data-item=\"Everywhere\" href=\"#\" data-value=\"0\" data-placeholder=\"What are you looking for?\" data-icon=\"icon-search\">
+              <i class=\"material-icons\">search</i> Everywhere</a>
+            </li>
+            <hr>
+            <li class=\"search-book search-option\">
+              <a class=\"dropdown-item\" data-item=\"Catalog\" href=\"#\" data-value=\"1\" data-placeholder=\"Product name, SKU, reference...\" data-icon=\"icon-book\">
+                <i class=\"material-icons\">library_books</i> Catalog
+              </a>
+            </li>
+            <li class=\"search-customers-name search-option\">
+              <a class=\"dropdown-item\" data-item=\"Customers by name\" href=\"#\" data-value=\"2\" data-placeholder=\"Email, name...\" data-icon=\"icon-group\">
+                <i class=\"material-icons\">group</i> Customers by name
+              </a>
+            </li>
+            <li class=\"search-customers-addresses search-option\">
+              <a class=\"dropdown-item\" data-item=\"Customers by ip address\" href=\"#\" data-value=\"6\" data-placeholder=\"123.45.67.89\" data-icon=\"icon-desktop\">
+                <i class=\"material-icons\">desktop_windows</i>Customers by IP address</a>
+            </li>
+            <li class=\"search-orders search-option\">
+              <a class=\"dropdown-item\" data-item=\"Orders\" href=\"#\" data-value=\"3\" data-placeholder=\"Order ID\" data-icon=\"icon-credit-card\">
+                <i class=\"material-icons\">credit_card</i> Orders
+              </a>
+            </li>
+            <li class=\"search-invoices search-option\">
+              <a class=\"dropdown-item\" data-item=\"Invoices\" href=\"#\" data-value=\"4\" data-placeholder=\"Invoice Number\" data-icon=\"icon-book\">
+                <i class=\"material-icons\">book</i></i> Invoices
+              </a>
+            </li>
+            <li class=\"search-carts search-option\">
+              <a class=\"dropdown-item\" data-item=\"Carts\" href=\"#\" data-value=\"5\" data-placeholder=\"Cart ID\" data-icon=\"icon-shopping-cart\">
+                <i class=\"material-icons\">shopping_cart</i> Carts
+              </a>
+            </li>
+            <li class=\"search-modules search-option\">
+              <a class=\"dropdown-item\" data-item=\"Modules\" href=\"#\" data-value=\"7\" data-placeholder=\"Module name\" data-icon=\"icon-puzzle-piece\">
+                <i class=\"material-icons\">view_module</i> Modules
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class=\"input-group-addon search-bar\">
+      <button type=\"submit\">SEARCH<i class=\"material-icons\">search</i></button>
+    </div>
+  </div>
+</form>
+
+<script type=\"text/javascript\">
+ \$(document).ready(function(){
+  });
+</script>
+</div>
+
+
+    <div class=\"component pull-md-right -norightmargin\"><div class=\"employee-dropdown dropdown\">
+      <div class=\"img-circle person\" data-toggle=\"dropdown\">
+      <i class=\"material-icons\">person</i>
+    </div>
+    <div class=\"dropdown-menu dropdown-menu-right p-a-1 m-r-2\">
+    <div class=\"text-xs-center\">
+      <img class=\"avatar img-circle\" src=\"http://profile.prestashop.com/kasquare%40kasquare.com.jpg\" /><br>
+      Arumugam C
+    </div>
+    <hr>
+    <a class=\"employee-link\" href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminEmployees&amp;token=ea872b1ec9d2b2e19862558521d52003&amp;id_employee=1&amp;updateemployee\" target=\"_blank\">
+      <i class=\"material-icons\">settings_applications</i> Your profile
+    </a>
+    <a class=\"employee-link m-t-1\" id=\"header_logout\" href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminLogin&amp;token=5bd63ab821026800be66d08129e5d00f&amp;logout\">
+      <i class=\"material-icons\">power_settings_new</i> Log out
+    </a>
+  </div>
+</div>
+</div>
+          <div class=\"component pull-md-right\"><div class=\"notification-center dropdown\">
+  <div class=\"notification dropdown-toggle\">
+    <i class=\"material-icons\">notifications_none</i>
+    <span id=\"notifications-total\" class=\"count\">0</span>
+  </div>
+  <div class=\"dropdown-menu dropdown-menu-right\">
+    <div class=\"notifications\">
+      <ul class=\"nav nav-tabs\" role=\"tablist\">
+                          <li class=\"nav-item\">
+            <a
+              class=\"nav-link active\"
+              id=\"orders-tab\"
+              data-toggle=\"tab\"
+              data-type=\"order\"
+              href=\"#orders-notifications\"
+              role=\"tab\"
+            >
+              Orders<span id=\"_nb_new_orders_\"></span>
+            </a>
+          </li>
+                                    <li class=\"nav-item\">
+            <a
+              class=\"nav-link \"
+              id=\"customers-tab\"
+              data-toggle=\"tab\"
+              data-type=\"customer\"
+              href=\"#customers-notifications\"
+              role=\"tab\"
+            >
+              Customers<span id=\"_nb_new_customers_\"></span>
+            </a>
+          </li>
+                                    <li class=\"nav-item\">
+            <a
+              class=\"nav-link \"
+              id=\"messages-tab\"
+              data-toggle=\"tab\"
+              data-type=\"customer_message\"
+              href=\"#messages-notifications\"
+              role=\"tab\"
+            >
+              Messages<span id=\"_nb_new_messages_\"></span>
+            </a>
+          </li>
+                        </ul>
+
+      <!-- Tab panes -->
+      <div class=\"tab-content\">
+                          <div class=\"tab-pane active empty\" id=\"orders-notifications\" role=\"tabpanel\">
+            <p class=\"no-notification\">
+              No new order for now :(<br>
+              Have you checked your <strong><a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCarts&token=f8809a7695a8bef199b928a334333670&action=filterOnlyAbandonedCarts\">abandonned carts</a></strong>?<br>
+              Did you check your conversion rate lately?
+            </p>
+            <div class=\"notification-elements\"></div>
+          </div>
+                                    <div class=\"tab-pane  empty\" id=\"customers-notifications\" role=\"tabpanel\">
+            <p class=\"no-notification\">
+              No new customer for now :(<br>
+              Are you active on social media these days?
+            </p>
+            <div class=\"notification-elements\"></div>
+          </div>
+                                    <div class=\"tab-pane  empty\" id=\"messages-notifications\" role=\"tabpanel\">
+            <p class=\"no-notification\">
+              No new message for now.<br>
+              Seems like all your customers are happy :)
+            </p>
+            <div class=\"notification-elements\"></div>
+          </div>
+                        </div>
+    </div>
+  </div>
+</div>
+
+  <script type=\"text/html\" id=\"order-notification-template\">
+    <a class=\"notif\" href='order_url'>
+      #_id_order_ -
+      from <strong>_customer_name_</strong> (_iso_code_)_carrier_
+      <strong class=\"pull-xs-right\">_total_paid_</strong>
+    </a>
+  </script>
+
+  <script type=\"text/html\" id=\"customer-notification-template\">
+    <a class=\"notif\" href='customer_url'>
+      #_id_customer_ - <strong>_customer_name_</strong>_company_ - register <strong>_date_add_</strong>
+    </a>
+  </script>
+
+  <script type=\"text/html\" id=\"message-notification-template\">
+    <a class=\"notif\" href='message_url'>
+    <span class=\"message-notification-status _status_\">
+      <i class=\"material-icons\">fiber_manual_record</i> _status_
+    </span>
+      - <strong>_customer_name_</strong> (_company_) - <i class=\"material-icons\">access_time</i> _date_add_
+    </a>
+  </script>
+</div>
+        <div class=\"component pull-md-right\">  <div class=\"shop-list\">
+    <a class=\"link\" href=\"http://stage.mycarpentryworks.com/\" target= \"_blank\">kasquare</a>
+  </div>
+</div>
+            
+
+    
+
+    
+    
+  </nav>
+</header>
+
+<nav class=\"nav-bar\">
+  <ul class=\"main-menu\">
+
+          
+                
+                
+        
+          <li class=\"link-levelone \" data-submenu=\"1\">
+            <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminDashboard&amp;token=1b630b6bc49122f9cb9a10c380a44895\" class=\"link\" >
+              <i class=\"material-icons\">trending_up</i> <span>Dashboard</span>
+            </a>
+          </li>
+
+        
+                
+                                  
+                
+        
+          <li class=\"category-title -active\" data-submenu=\"2\">
+              <span class=\"title\">Sell</span>
+          </li>
+
+                          
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"3\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminOrders&amp;token=bbdd5f5ba65ab69b969610a356a19b83\" class=\"link\">
+                    <i class=\"material-icons\">shopping_basket</i> <span>Orders</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"4\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminOrders&amp;token=bbdd5f5ba65ab69b969610a356a19b83\" class=\"link\"> Orders
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"5\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminInvoices&amp;token=98fb1a2e3bf60c09163482d2e341f7c1\" class=\"link\"> Invoices
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"6\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminSlip&amp;token=7a256afaf72c16f6f389265667ff4bbd\" class=\"link\"> Credit Slips
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"7\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminDeliverySlip&amp;token=a8e998ffaf3ddbcdddff2ee6f2e47c93\" class=\"link\"> Delivery Slips
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"8\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCarts&amp;token=f8809a7695a8bef199b928a334333670\" class=\"link\"> Shopping Carts
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone -active\" data-submenu=\"9\">
+                  <a href=\"/adminkasquare/index.php/product/catalog?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\" class=\"link\">
+                    <i class=\"material-icons\">store</i> <span>Catalog</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo -active\" data-submenu=\"10\">
+                              <a href=\"/adminkasquare/index.php/product/catalog?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\" class=\"link\"> Products
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"11\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCategories&amp;token=4eddaacb30c19f7b2a73cfbeda29225f\" class=\"link\"> Categories
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"12\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminTracking&amp;token=dd78feb6e9788795b35b23cb6d0d2fdf\" class=\"link\"> Monitoring
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"13\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminAttributesGroups&amp;token=430424c94226bad20d86eb91c4f8056f\" class=\"link\"> Attributes &amp; Features
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"16\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminManufacturers&amp;token=c34d544e5d4e1a93da7a22b5777c5f4c\" class=\"link\"> Brands &amp; Suppliers
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"19\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminAttachments&amp;token=64855708846b7a33e655ca2d32cc6518\" class=\"link\"> Files
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"20\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCartRules&amp;token=eedaae0b6838fc71e95ec1098e0da3c6\" class=\"link\"> Discounts
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"23\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCustomers&amp;token=529c985c2908876641406c698d5c4f11\" class=\"link\">
+                    <i class=\"material-icons\">account_circle</i> <span>Customers</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"24\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCustomers&amp;token=529c985c2908876641406c698d5c4f11\" class=\"link\"> Customers
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"25\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminAddresses&amp;token=16de506184de70920158abe5d29be75b\" class=\"link\"> Addresses
+                              </a>
+                            </li>
+
+                                                                                                                          </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"27\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCustomerThreads&amp;token=82b3c00aa0b22485f7fc2f873f2950f0\" class=\"link\">
+                    <i class=\"material-icons\">chat</i> <span>Customer Service</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"28\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCustomerThreads&amp;token=82b3c00aa0b22485f7fc2f873f2950f0\" class=\"link\"> Customer Service
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"29\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminOrderMessage&amp;token=dc9f01548013659fcf5621496355f209\" class=\"link\"> Order Messages
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"30\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminReturn&amp;token=2093779786d14b5d353474543462efdf\" class=\"link\"> Merchandise Returns
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"31\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminStats&amp;token=d46991582138a9369a3e80affe14bd41\" class=\"link\">
+                    <i class=\"material-icons\">assessment</i> <span>Stats</span>
+                  </a>
+                                    </li>
+                          
+        
+                
+                                  
+                
+        
+          <li class=\"category-title \" data-submenu=\"41\">
+              <span class=\"title\">Improve</span>
+          </li>
+
+                          
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"42\">
+                  <a href=\"/adminkasquare/index.php/module/catalog?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\" class=\"link\">
+                    <i class=\"material-icons\">extension</i> <span>Modules</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"43\">
+                              <a href=\"/adminkasquare/index.php/module/catalog?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\" class=\"link\"> Modules &amp; Services
+                              </a>
+                            </li>
+
+                                                                                                                              
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"45\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminAddonsCatalog&amp;token=f1fe44585ffb6f73e13fc2599cb3cd8d\" class=\"link\"> Modules Catalog
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"46\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminThemes&amp;token=0c08368a3dbeb94160831537e0afe47c\" class=\"link\">
+                    <i class=\"material-icons\">desktop_mac</i> <span>Design</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"47\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminThemes&amp;token=0c08368a3dbeb94160831537e0afe47c\" class=\"link\"> Theme &amp; Logo
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"48\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminThemesCatalog&amp;token=a28e685a22f353c2e9dc2fe6a9040375\" class=\"link\"> Theme Catalog
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"49\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCmsContent&amp;token=1ab8a033e5a4ba6a8a8494eb2d2ca6b8\" class=\"link\"> Pages
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"50\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminModulesPositions&amp;token=dc511e043d2986050af31db424d3004f\" class=\"link\"> Positions
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"51\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminImages&amp;token=b012a3b715d6aed03c8e9ad60aed0d85\" class=\"link\"> Image Settings
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"116\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminLinkWidget&amp;token=0d58b909e6fcc0d135b3e1e9197e2dfe\" class=\"link\"> Link Widget
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"52\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCarriers&amp;token=fe97bc9d0e9a59517790b67b0b816310\" class=\"link\">
+                    <i class=\"material-icons\">local_shipping</i> <span>Shipping</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"53\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCarriers&amp;token=fe97bc9d0e9a59517790b67b0b816310\" class=\"link\"> Carriers
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"54\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminShipping&amp;token=d14c1645d19dc9e3d084fc9806f3df7e\" class=\"link\"> Preferences
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"55\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPayment&amp;token=d28efd712c4a2f7f862e708a498298dd\" class=\"link\">
+                    <i class=\"material-icons\">payment</i> <span>Payment</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"56\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPayment&amp;token=d28efd712c4a2f7f862e708a498298dd\" class=\"link\"> Payment Methods
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"57\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPaymentPreferences&amp;token=f1d530af8e5455ca07c420491ab0ee29\" class=\"link\"> Preferences
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"58\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminLocalization&amp;token=b1b77210c6f272ceb2cccdb7f744cc34\" class=\"link\">
+                    <i class=\"material-icons\">language</i> <span>International</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"59\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminLocalization&amp;token=b1b77210c6f272ceb2cccdb7f744cc34\" class=\"link\"> Localization
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"64\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCountries&amp;token=41b0f1da84b99644ec13ee36e8083c5c\" class=\"link\"> Locations
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"68\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminTaxes&amp;token=6751387ee7bfd201368097b1fc35c995\" class=\"link\"> Taxes
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"71\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminTranslations&amp;token=8162da5e2c6a05405faf8a3d8d5ce301\" class=\"link\"> Translations
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                          
+        
+                
+                                  
+                
+        
+          <li class=\"category-title \" data-submenu=\"72\">
+              <span class=\"title\">Configure</span>
+          </li>
+
+                          
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"73\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPreferences&amp;token=8a3f39ef7317d9ae930a3ba19e3e9e44\" class=\"link\">
+                    <i class=\"material-icons\">settings</i> <span>Shop Parameters</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"74\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPreferences&amp;token=8a3f39ef7317d9ae930a3ba19e3e9e44\" class=\"link\"> General
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"77\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminOrderPreferences&amp;token=37d95a4a69d5f8d372ce6fab3edc057c\" class=\"link\"> Order Settings
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"80\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPPreferences&amp;token=7fda304d1caf5cda9fb19de995d15574\" class=\"link\"> Product Settings
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"81\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCustomerPreferences&amp;token=4c926f96b4fee32b325f4228fe8a6d0f\" class=\"link\"> Customer Settings
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"85\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminContacts&amp;token=b505e654132dbe97b23299a330f50d2a\" class=\"link\"> Contact
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"88\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminMeta&amp;token=a4eff1d3b2bd60fcf935469b2a78459f\" class=\"link\"> Traffic &amp; SEO
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"92\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminSearchConf&amp;token=9837ebb261366d29a7ccd9992622e93d\" class=\"link\"> Search
+                              </a>
+                            </li>
+
+                                                                        </ul>
+                                    </li>
+                                        
+                
+                                
+                <li class=\"link-levelone \" data-submenu=\"95\">
+                  <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminInformation&amp;token=e08a7d61375fcba579058835476451a9\" class=\"link\">
+                    <i class=\"material-icons\">settings_applications</i> <span>Advanced Parameters</span>
+                  </a>
+                                          <ul class=\"submenu\">
+                                                  
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"96\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminInformation&amp;token=e08a7d61375fcba579058835476451a9\" class=\"link\"> Information
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"97\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminPerformance&amp;token=2d69b8e8730fb4435fdbbde55cd2c394\" class=\"link\"> Performance
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"98\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminAdminPreferences&amp;token=5f23ed5277df64638b495ac9cb2749f6\" class=\"link\"> Administration
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"99\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminEmails&amp;token=cf45f9a8a9b8a45d0226d449eb3fc151\" class=\"link\"> E-mail
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"100\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminImport&amp;token=ff4f0f5ccabc15f514d41484097986b9\" class=\"link\"> Import
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"101\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminEmployees&amp;token=ea872b1ec9d2b2e19862558521d52003\" class=\"link\"> Team
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"105\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminRequestSql&amp;token=6b90b4d0a43ec64866f654c78f566ff7\" class=\"link\"> Database
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"108\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminLogs&amp;token=af6ca45b5fbfcf80b6b61e7d9fd646ca\" class=\"link\"> Logs
+                              </a>
+                            </li>
+
+                                                                            
+                            
+                                                        
+                            <li class=\"link-leveltwo \" data-submenu=\"109\">
+                              <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminWebservice&amp;token=c36fa52db9fcc7dd41ef9fe6ff3c55a2\" class=\"link\"> Webservice
+                              </a>
+                            </li>
+
+                                                                                                                                                                            </ul>
+                                    </li>
+                          
+        
+            </ul>
+
+  <span class=\"menu-collapse\">
+    <i class=\"material-icons\">&#xE8EE;</i>
+  </span>
+
+  
+
+</nav>
+
+
+<div id=\"main-div\">
+
+  
+    
+<div class=\"header-toolbar\">
+
+  
+    <ol class=\"breadcrumb\">
+
+              <li>
+                      <a href=\"http://stage.mycarpentryworks.com/adminkasquare/index.php?controller=AdminCatalog&amp;token=80a04b4a29e570aee47d1d68f6d85708\">Catalog</a>
+                  </li>
+      
+              <li>
+                      <a href=\"/adminkasquare/index.php/product/catalog?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\">Products</a>
+                  </li>
+      
+    </ol>
+  
+
+  
+    <h2 class=\"title\">
+      Products    </h2>
+  
+
+  
+    <div class=\"toolbar-icons\">
+                                      
+          <a
+            class=\"m-b-2 m-r-1 btn btn-primary  pointer\"            id=\"page-header-desc-configuration-add\"
+            href=\"/adminkasquare/index.php/product/new?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\"            title=\"Create a new product: CTRL+P\"            data-toggle=\"tooltip\"
+            data-placement=\"bottom\"          >
+            <i class=\"material-icons\">add_circle_outline</i>
+            <span class=\"title\">New product</span>
+          </a>
+                            
+        <a
+          class=\"toolbar-button toolbar_btn\"
+          id=\"page-header-desc-configuration-modules-list\"
+          href=\"/adminkasquare/index.php/module/catalog?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\"          title=\"Recommended Modules and Services\"
+                  >
+                      <i class=\"material-icons\">extension</i>
+                    <span class=\"title\">Recommended Modules and Services</span>
+        </a>
+            
+                  <a class=\"toolbar-button btn-help btn-sidebar\" href=\"#\"
+             title=\"Help\"
+             data-toggle=\"sidebar\"
+             data-target=\"#right-sidebar\"
+             data-url=\"/adminkasquare/index.php/common/sidebar/http%253A%252F%252Fhelp.prestashop.com%252Fen%252Fdoc%252FAdminProducts%253Fversion%253D1.7.0.4%2526country%253Den/Help?_token=8Kp0sFok4C32pMzTPs_4jgboAeHUzQ1nfuvW_9W0s_w\"
+             id=\"product_form_open_help\"
+          >
+            <i class=\"material-icons\">help</i>
+            <span class=\"title\">Help</span>
+          </a>
+                  </div>
+  
+    
+</div>
+    <div class=\"modal fade\" id=\"modal_addons_connect\" tabindex=\"-1\">
+\t<div class=\"modal-dialog modal-md\">
+\t\t<div class=\"modal-content\">
+\t\t\t\t\t\t<div class=\"modal-header\">
+\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>
+\t\t\t\t<h4 class=\"modal-title\"><i class=\"icon-puzzle-piece\"></i> <a target=\"_blank\" href=\"http://addons.prestashop.com/?utm_source=back-office&utm_medium=modules&utm_campaign=back-office-EN&utm_content=download\">PrestaShop Addons</a></h4>
+\t\t\t</div>
+\t\t\t
+\t\t\t
+<div class=\"modal-body\">
+\t\t\t\t\t\t<div class=\"alert alert-warning\">
+\t\t\t\tIf you want to be able to fully use the AdminModules panel and have free modules available, you should enable the following configuration on your server:
+\t\t\t\t<br />
+\t\t\t\t- Enable PHP's allow_url_fopen setting<br />\t\t\t\t\t\t\t</div>
+\t\t\t</div>
+
+
+\t\t\t\t\t</div>
+\t</div>
+</div>
+    <div class=\"content-div \">
+
+      
+
+      
+
+      
+
+      
+      
+      
+      
+
+      <div class=\"row \">
+        <div class=\"col-xs-12\">
+          <div id=\"ajax_confirmation\" class=\"alert alert-success\" style=\"display: none;\"></div>
+
+
+
+
+  ";
+        // line 992
+        $this->displayBlock('content_header', $context, $blocks);
+        // line 993
+        echo "                 ";
+        $this->displayBlock('content', $context, $blocks);
+        // line 994
+        echo "                 ";
+        $this->displayBlock('content_footer', $context, $blocks);
+        // line 995
+        echo "                 ";
+        $this->displayBlock('sidebar_right', $context, $blocks);
+        // line 996
+        echo "
+        </div>
+      </div>
+
+    </div>
+
+  
+</div>
+
+
+  <div id=\"footer\" class=\"bootstrap hide\">
+<!--
+  <div class=\"col-sm-2 hidden-xs\">
+    <a href=\"http://www.prestashop.com/\" class=\"_blank\">PrestaShop&trade;</a>
+    -
+    <span id=\"footer-load-time\"><i class=\"icon-time\" title=\" \"></i> 1.731s</span>
+  </div>
+
+  <div class=\"col-sm-2 hidden-xs\">
+    <div class=\"social-networks\">
+      <a class=\"link-social link-twitter _blank\" href=\"https://twitter.com/PrestaShop\" title=\"Twitter\">
+        <i class=\"icon-twitter\"></i>
+      </a>
+      <a class=\"link-social link-facebook _blank\" href=\"https://www.facebook.com/prestashop\" title=\"Facebook\">
+        <i class=\"icon-facebook\"></i>
+      </a>
+      <a class=\"link-social link-github _blank\" href=\"https://www.prestashop.com/github\" title=\"Github\">
+        <i class=\"icon-github\"></i>
+      </a>
+      <a class=\"link-social link-google _blank\" href=\"https://plus.google.com/+prestashop/\" title=\"Google\">
+        <i class=\"icon-google-plus\"></i>
+      </a>
+    </div>
+  </div>
+  <div class=\"col-sm-5\">
+    <div class=\"footer-contact\">
+      <a href=\"http://www.prestashop.com/en/contact_us?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download\" class=\"footer_link _blank\">
+        <i class=\"icon-envelope\"></i>
+        Contact
+      </a>
+      /&nbsp;
+      <a href=\"http://forge.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download\" class=\"footer_link _blank\">
+        <i class=\"icon-bug\"></i>
+        Bug Tracker
+      </a>
+      /&nbsp;
+      <a href=\"http://www.prestashop.com/forums/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download\" class=\"footer_link _blank\">
+        <i class=\"icon-comments\"></i>
+        Forum
+      </a>
+      /&nbsp;
+      <a href=\"http://addons.prestashop.com/?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download\" class=\"footer_link _blank\">
+        <i class=\"icon-puzzle-piece\"></i>
+        Addons
+      </a>
+      /&nbsp;
+      <a href=\"http://www.prestashop.com/en/training-prestashop?utm_source=back-office&amp;utm_medium=footer&amp;utm_campaign=back-office-EN&amp;utm_content=download\" class=\"footer_link _blank\">
+        <i class=\"icon-book\"></i>
+        Training
+      </a>
+                </div>
+  </div>
+
+  <div class=\"col-sm-3\">
+    
+  </div>
+
+  <div id=\"go-top\" class=\"hide\"><i class=\"icon-arrow-up\"></i></div>
+  -->
+</div>
+
+
+
+  <div class=\"bootstrap\">
+    <div class=\"modal fade\" id=\"modal_addons_connect\" tabindex=\"-1\">
+\t<div class=\"modal-dialog modal-md\">
+\t\t<div class=\"modal-content\">
+\t\t\t\t\t\t<div class=\"modal-header\">
+\t\t\t\t<button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>
+\t\t\t\t<h4 class=\"modal-title\"><i class=\"icon-puzzle-piece\"></i> <a target=\"_blank\" href=\"http://addons.prestashop.com/?utm_source=back-office&utm_medium=modules&utm_campaign=back-office-EN&utm_content=download\">PrestaShop Addons</a></h4>
+\t\t\t</div>
+\t\t\t
+\t\t\t
+<div class=\"modal-body\">
+\t\t\t\t\t\t<div class=\"alert alert-warning\">
+\t\t\t\tIf you want to be able to fully use the AdminModules panel and have free modules available, you should enable the following configuration on your server:
+\t\t\t\t<br />
+\t\t\t\t- Enable PHP's allow_url_fopen setting<br />\t\t\t\t\t\t\t</div>
+\t\t\t</div>
+
+
+\t\t\t\t\t</div>
+\t</div>
+</div>
+  </div>
+
+";
+        // line 1092
+        $this->displayBlock('javascripts', $context, $blocks);
+        $this->displayBlock('extra_javascripts', $context, $blocks);
+        $this->displayBlock('translate_javascripts', $context, $blocks);
+        echo "</body>
+</html>";
+    }
+
+    // line 69
+    public function block_stylesheets($context, array $blocks = array())
+    {
+    }
+
+    public function block_extra_stylesheets($context, array $blocks = array())
+    {
+    }
+
+    // line 992
+    public function block_content_header($context, array $blocks = array())
+    {
+    }
+
+    // line 993
+    public function block_content($context, array $blocks = array())
+    {
+    }
+
+    // line 994
+    public function block_content_footer($context, array $blocks = array())
+    {
+    }
+
+    // line 995
+    public function block_sidebar_right($context, array $blocks = array())
+    {
+    }
+
+    // line 1092
+    public function block_javascripts($context, array $blocks = array())
+    {
+    }
+
+    public function block_extra_javascripts($context, array $blocks = array())
+    {
+    }
+
+    public function block_translate_javascripts($context, array $blocks = array())
+    {
+    }
+
+    public function getTemplateName()
+    {
+        return "__string_template__945c2a97376b37b644501bb12c6efb7db5d1be7150f7f6b3aaa84da73355d5dc";
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  1171 => 1092,  1166 => 995,  1161 => 994,  1156 => 993,  1151 => 992,  1142 => 69,  1134 => 1092,  1036 => 996,  1033 => 995,  1030 => 994,  1027 => 993,  1025 => 992,  98 => 69,  28 => 1,);
+    }
+
+    public function getSource()
+    {
+        return "";
+    }
+}
