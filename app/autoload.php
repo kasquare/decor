@@ -1,42 +1,31 @@
 <?php
 /**
- * 2007-2016 PrestaShop
+ * Register basic autoloader that uses include path
  *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to http://www.prestashop.com for more information.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2016 PrestaShop SA
- * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * International Registered Trademark & Property of PrestaShop SA
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
  */
-
-
-use Doctrine\Common\Annotations\AnnotationRegistry;
-use Composer\Autoload\ClassLoader;
+use Magento\Framework\Autoload\AutoloaderRegistry;
+use Magento\Framework\Autoload\ClassLoaderWrapper;
 
 /**
- * @var ClassLoader $loader
+ * Shortcut constant for the root directory
  */
-$loader = require __DIR__.'/../vendor/autoload.php';
+define('BP', dirname(__DIR__));
 
-AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
+$vendorDir = require BP . '/app/etc/vendor_path.php';
+$vendorAutoload = BP . "/{$vendorDir}/autoload.php";
 
-// instantiated to allow call of Legacy classes from classes in /src and /tests
-require_once(__DIR__.'/../config/defines.inc.php');
-require_once(__DIR__.'/../classes/PrestaShopAutoload.php');
+/* 'composer install' validation */
+if (file_exists($vendorAutoload)) {
+    $composerAutoloader = include $vendorAutoload;
+} else {
+    throw new \Exception(
+        'Vendor autoload is not found. Please run \'composer install\' under application root directory.'
+    );
+}
 
-return $loader;
+AutoloaderRegistry::registerAutoloader(new ClassLoaderWrapper($composerAutoloader));
+
+// Sets default autoload mappings, may be overridden in Bootstrap::create
+\Magento\Framework\App\Bootstrap::populateAutoloader(BP, []);

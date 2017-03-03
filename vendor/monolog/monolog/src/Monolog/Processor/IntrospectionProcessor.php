@@ -30,18 +30,15 @@ class IntrospectionProcessor
 
     private $skipClassesPartials;
 
-    private $skipStackFramesCount;
-
     private $skipFunctions = array(
         'call_user_func',
         'call_user_func_array',
     );
 
-    public function __construct($level = Logger::DEBUG, array $skipClassesPartials = array(), $skipStackFramesCount = 0)
+    public function __construct($level = Logger::DEBUG, array $skipClassesPartials = array())
     {
         $this->level = Logger::toMonologLevel($level);
         $this->skipClassesPartials = array_merge(array('Monolog\\'), $skipClassesPartials);
-        $this->skipStackFramesCount = $skipStackFramesCount;
     }
 
     /**
@@ -55,7 +52,7 @@ class IntrospectionProcessor
             return $record;
         }
 
-        $trace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
+        $trace = debug_backtrace();
 
         // skip first since it's always the current method
         array_shift($trace);
@@ -64,7 +61,7 @@ class IntrospectionProcessor
 
         $i = 0;
 
-        while ($this->isTraceClassOrSkippedFunction($trace, $i)) {
+        while (isset($trace[$i]['class']) || in_array($trace[$i]['function'], $this->skipFunctions)) {
             if (isset($trace[$i]['class'])) {
                 foreach ($this->skipClassesPartials as $part) {
                     if (strpos($trace[$i]['class'], $part) !== false) {
@@ -80,8 +77,6 @@ class IntrospectionProcessor
             break;
         }
 
-        $i += $this->skipStackFramesCount;
-
         // we should have the call source now
         $record['extra'] = array_merge(
             $record['extra'],
@@ -94,14 +89,5 @@ class IntrospectionProcessor
         );
 
         return $record;
-    }
-
-    private function isTraceClassOrSkippedFunction(array $trace, $index)
-    {
-        if (!isset($trace[$index])) {
-            return false;
-        }
-
-        return isset($trace[$index]['class']) || in_array($trace[$index]['function'], $this->skipFunctions);
     }
 }
